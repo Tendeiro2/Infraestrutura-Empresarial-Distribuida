@@ -1,0 +1,14 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	cpdijm.pt. root.cpdijm.pt. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@		IN	NS	US-DNS-1.cpdijm.pt.
+US-DNS-1	IN	A	62.28.0.1
+1.0.28.62.in-addr.arpa	IN 	PTR	cpdijm.pt.

@@ -1,0 +1,8 @@
+server {
+	listen 80;
+	server_name windows.cpdijm.pt;
+	location / {
+		proxy_pass http://10.2.1.100;
+		include proxy_params;
+	}	
+}
